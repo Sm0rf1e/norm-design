@@ -8,12 +8,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { BrushIcon } from '@/components/ui/brush-icon'
 import { PhoneIcon } from '@/components/ui/phone-icon'
-import { MishaIcon } from '@/components/ui/misha-icon'
+import { MailIcon } from '@/components/ui/mail-icon'
 import { InstagramIcon } from '@/components/ui/instagram-icon'
 import { BehanceIcon } from '@/components/ui/behance-icon'
-import { TelegramIcon } from '@/components/ui/telegram-icon'
 import { ImageSized } from '@/components/image-sized'
 import { ScrollButton } from '@/components/ui/scroll-button'
+import { TelegramIcon } from '@/components/ui/telegram-icon'
 
 export default function Home() {
 
@@ -65,7 +65,7 @@ export default function Home() {
                 </h3>
               </div>
               <div className='absolute flex md:hidden lg:hidden bottom-0 left-0 justify-center w-full mb-[9px]'>
-                <LinkButton href='/' className='z-30'>
+                <LinkButton href='https://t.me/@nn_michail' className='z-30'>
                   Перейти
                 </LinkButton>
               </div>
@@ -127,18 +127,18 @@ export default function Home() {
                       Контакты
                     </p>
                   </div>
-                    <LinkButton href='/' variant='secondary' className='hidden lg:flex z-30'>
+                    <ScrollButton to={2950} variant='secondary' className='hidden lg:flex z-30'>
                       Перейти
-                    </LinkButton>
+                    </ScrollButton>
                 </div>
                 <div className='absolute bottom-0 left-0 z-0 w-full h-full'>
                   <ImageSized name='block-4' className='rounded-[15px]'/>
                 </div>
               </div>
 
-              <LinkButton href='/' className='flex lg:hidden'>
+              <ScrollButton to={2950} className='flex lg:hidden'>
                   Перейти
-              </LinkButton>
+              </ScrollButton>
               
             </div>
 
@@ -149,7 +149,7 @@ export default function Home() {
                 <div className='col-span-2 lg:col-span-1 lg:row-span-2 bg-white w-full h-full rounded-[20px]'>
                   <Image
                     className='rounded-[20px]'
-                    src={'/cross.jpg'}
+                    src={'/block-6.jpg'}
                     alt=''
                     width={1140}
                     height={581}
@@ -351,7 +351,7 @@ export default function Home() {
 
                   <Link href={'/'}>
                     <div className='flex flex-col items-center lg:flex-row gap-x-[21px] gap-y-[15px] group cursor-pointer'>
-                      <MishaIcon/>
+                      <MailIcon/>
                       <div className='w-[50px] h-[15px] lg:h-[67px] bg-[#161616] group-hover:h-[20px] lg:group-hover:h-[67px] group-hover:rounded-t lg:group-hover:rounded-tr-none lg:group-hover:w-[70px] lg:group-hover:rounded-l-xl transition-all'/>
                     </div>
                   </Link>

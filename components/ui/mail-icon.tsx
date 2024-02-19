@@ -7,7 +7,7 @@ interface MishaIconProps {
   color?: string
 }
 
-export const MishaIcon: FC<MishaIconProps> = ({color = '#161616'}) => {
+export const MailIcon: FC<MishaIconProps> = ({color = '#161616'}) => {
   const matches = useMediaQuery("(max-width: 1024px)")
   const size = matches ? '47' : '66'
 
