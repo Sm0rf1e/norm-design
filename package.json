@@ -1,6 +1,6 @@
 {
-  "name": "norm",
-  "version": "0.1.0",
+  "name": "NORM Website",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
