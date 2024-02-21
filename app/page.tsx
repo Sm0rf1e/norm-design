@@ -1,3 +1,5 @@
+'use client'
+
 import { BehanceIcon } from '@/components/icons/behance-icon'
 import { BrushIcon } from '@/components/icons/brush-icon'
 import { DoubleSlash } from '@/components/icons/double-slash'
@@ -7,7 +9,7 @@ import { MailIcon } from '@/components/icons/mail-icon'
 import { ShineIcon } from '@/components/icons/shine-icon'
 import { TelegramIcon } from '@/components/icons/telegram-icon'
 import { ImageSized } from '@/components/ui/image-sized'
-import { Brackets } from '@/components/icons/brackets'
+import { Brackets, LeftBracket, RightBracket } from '@/components/icons/brackets'
 import { LinkButton } from '@/components/ui/link-button'
 import { PhoneIcon } from '@/components/icons/phone-icon'
 import { ScrollButton } from '@/components/ui/scroll-button'
@@ -15,6 +17,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from './_components/header'
 import { Container } from './_components/container'
+import { motion } from 'framer-motion'
 
 export default function Home() {
 
@@ -23,7 +26,23 @@ export default function Home() {
       <Header/>
       
       <main className='font-sf_pro'>
-        <div className='mt-[95px] lg:mt-[275px] w-fit z-30 mr-auto ml-auto gap-y-[12px]
+        <motion.div
+          initial='hidden'
+          animate='visible'
+          variants={{
+            hidden: {
+              scale: 0,
+            },
+            visible: {
+              scale: 1,
+              transition: {
+                ease: 'circOut',
+                duration: 1,
+                delay: 0,
+              },
+            }
+          }}
+          className='mt-[95px] lg:mt-[275px] w-fit z-30 mr-auto ml-auto gap-y-[12px]
           lg:gap-y-[20px]'
         >
           <div className='flex gap-[20px] justify-center items-center z-30'>
@@ -41,8 +60,51 @@ export default function Home() {
           >
             Качественный <span className='text-gradient relative animate-pulse'><i className='w-full h-[7%] bg-gradient absolute lg:-bottom-[4px] -bottom-[1px]'/>дизайн</span> по доступной цене
           </h1>
-        </div>
-        <Brackets className={'absolute left-[5%] right-[5%] -z-10 top-[212px] hidden lg:flex'}/>
+        </motion.div>
+        <motion.div
+          initial='start'
+          animate='end'
+          variants={{
+            start: {
+              left: '45%',
+              scale: '60%',
+            },
+            end: {
+              left: '5%',
+              scale: '100%',
+              opacity: 1,
+              transition: {
+                delay: 0,
+                duration: 1,
+                ease: 'circOut',
+              }
+            }
+          }}
+          className={'absolute left-[5%] -z-10 top-[212px] hidden lg:flex'}>
+          <LeftBracket/>
+        </motion.div>
+        <motion.div
+        initial='start'
+        animate='end'
+        variants={{
+          start: {
+            right: '45%',
+            scale: '60%',
+          },
+          end: {
+            right: '5%',
+            scale: '100%',
+            opacity: 1,
+            transition: {
+              delay: 0,
+              duration: 1,
+              ease: 'circOut',
+            }
+          }
+        }}
+        className={'absolute right-[5%] -z-10 top-[212px] hidden lg:flex'}>
+          <RightBracket/>
+        </motion.div>
 
           <Container>
 

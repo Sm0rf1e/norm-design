@@ -1,13 +1,31 @@
+'use client'
+
 import { Logo } from '@/components/icons/logo'
 import { LinkButton } from '@/components/ui/link-button'
 import { ScrollButton } from '@/components/ui/scroll-button'
+import { motion } from 'framer-motion'
 import { FC } from 'react'
 
 interface HeaderProps {}
 
 export const Header: FC<HeaderProps> = ({}) => {
   return <>
-    <nav
+    <motion.nav
+      initial='start'
+      animate='end'
+      variants={{
+        start: {
+          y: '-100%'
+        },
+        end: {
+          y: 0,
+          transition: {
+            ease: 'circOut',
+            delay: 0,
+            duration: .5
+          }
+        }
+      }}
       className='flex fixed font-sf_pro w-full items-center
       justify-between top-0 z-50 max-h-[100px] backdrop-blur-xl
       py-[17px] px-[19px] lg:px-[100px] lg:py-[32px] bg-gradient-to-b
@@ -36,6 +54,6 @@ export const Header: FC<HeaderProps> = ({}) => {
           Портфолио
         </LinkButton>
       </div>
-    </nav>
+    </motion.nav>
   </>
 }

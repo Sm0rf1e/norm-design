@@ -1,6 +1,6 @@
 'use client'
 
-import { FC } from 'react'
+import { FC, Suspense } from 'react'
 import Image from 'next/image'
 import { useMediaQuery } from 'usehooks-ts'
 import { cn } from '@/lib/utils'
@@ -21,14 +21,16 @@ export const ImageSized: FC<ImageSizedProps> = ({name, className}) => {
   else dir = 'lg'
 
   return <>
-    <Image
-     draggable='false'
-     className={cn('z-0 w-full h-full object-cover', className)}
-     src={`/${dir}/${name}${end}.png`}
-     alt=''
-     sizes='(max-width: 768px) 50%'
-     fill
-     priority
-     />
+    <Suspense fallback={<div>Norm design</div>}>
+      <Image
+      draggable='false'
+      className={cn('z-0 w-full h-full object-cover', className)}
+      src={`/${dir}/${name}${end}.png`}
+      alt=''
+      sizes='(max-width: 768px) 50%'
+      fill
+      priority
+      />
+    </Suspense>
   </>
 }
