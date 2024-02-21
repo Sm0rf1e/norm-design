@@ -1,7 +1,10 @@
+'use client'
+
 import { Brackets } from '@/components/icons/brackets'
 import { NextPage } from 'next'
 import { Header } from './_components/header'
 import { LinkButton } from '@/components/ui/link-button'
+import { motion } from 'framer-motion'
 
 interface Props {}
 
@@ -9,7 +12,10 @@ const NotFound: NextPage<Props> = ({}) => {
   return <>
     <Header/>
     <main className='h-[200px] w-screen'>
-      <div className='lg:mt-[275px] h-full w-fit flex z-30 mr-auto ml-auto gap-y-[12px]
+      <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1, transition: {duration: .5}}}
+        className='lg:mt-[275px] h-full w-fit flex z-30 mr-auto ml-auto gap-y-[12px]
         lg:gap-y-[20px]'
       >
         <div className='flex flex-col gap-[40px] justify-center items-center z-30'>
@@ -20,7 +26,7 @@ const NotFound: NextPage<Props> = ({}) => {
           </h1>
           <LinkButton href='/'>Вернуться</LinkButton>
         </div>
-      </div>
+      </motion.div>
       <Brackets className={'absolute left-[5%] right-[5%] -z-10 top-[212px] hidden lg:flex'}/>
     </main>
   </>
