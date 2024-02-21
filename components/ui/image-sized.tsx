@@ -14,16 +14,21 @@ export const ImageSized: FC<ImageSizedProps> = ({name, className}) => {
   const phone = useMediaQuery("(max-width: 640px)")
 
   let end = '';
+  let dir = ''
 
   if (phone) end = '-sm'
+  if (phone) dir = 'sm'
+  else dir = 'lg'
 
   return <>
     <Image
-      draggable='false'
+     draggable='false'
      className={cn('z-0 w-full h-full object-cover', className)}
-     src={`/${name}${end}.png`}
+     src={`/${dir}/${name}${end}.png`}
      alt=''
-     layout='fill'
+     sizes='(max-width: 768px) 50%'
+     fill
+     priority
      />
   </>
 }

@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sf_pro: ['SF Pro Display', 'sans-serif'],
+        sf_pro_italic: ['SF Pro Display Italic', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -1,10 +1,10 @@
 'use client'
 
-import { FC, PropsWithChildren } from 'react'
-import { Button } from './button'
-import { LinkIconWhite } from './link-icon-white'
-import { LinkIconBlack } from './link-icon-black'
 import { useRouter } from 'next/navigation'
+import { FC, PropsWithChildren } from 'react'
+import { LinkIconBlack } from '../icons/link-icon-black'
+import { LinkIconWhite } from '../icons/link-icon-white'
+import { Button } from './button'
 
 interface LinkButtonProps {
   className?: string

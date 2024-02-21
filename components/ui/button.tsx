@@ -10,15 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-        "group flex justify-center items-center gap-x-[10px] rounded-full border border-white text-[15px] font-normal hover:bg-white hover:text-black lg:hover:px-[90px] group transition-all duration-200 tracking-widest",
+        "group flex justify-center items-center gap-x-[10px] rounded-full border border-white text-[15px] font-light hover:bg-white hover:text-black lg:hover:px-[90px] group transition-all duration-200 tracking-widest",
         secondary:
-        "group flex justify-center items-center gap-x-[10px] rounded-full border border-[#161616] text-[15px] text-[#161616] font-normal hover:bg-[#161616] hover:text-white lg:hover:px-[90px] group transition-all duration-200 tracking-widest",
+        "group flex justify-center items-center gap-x-[10px] rounded-full border border-[#161616] text-[15px] text-[#161616] font-light hover:bg-[#161616] hover:text-white lg:hover:px-[90px] group transition-all duration-200 tracking-widest",
       },
       size: {
         default: "px-[83px] py-[11px]",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
-        icon: "h-10 w-10",
       },
     },
     defaultVariants: {
