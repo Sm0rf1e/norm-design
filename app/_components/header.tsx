@@ -23,6 +23,7 @@ export const Header: FC<HeaderProps> = ({}) => {
       />
       <div className='flex gap-[21px]'>
         <ScrollButton
+          iconSize='sm'
           to={2950}
           className='text-[10px] px-[20px] py-[5px]
           md:text-[15px] lg:py-[11px] lg:text-[15px] lg:px-[83px]'

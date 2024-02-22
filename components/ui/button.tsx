@@ -10,9 +10,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-        "group flex justify-center items-center gap-x-[10px] rounded-full border border-white text-[15px] font-light hover:bg-white hover:text-black lg:hover:px-[90px] group transition-all duration-200 tracking-widest",
+        "group hover:bg-white hover:text-black lg:hover:px-[90px] flex justify-center items-center gap-x-[10px] rounded-full border border-white text-[15px] font-light group transition-all duration-200",
         secondary:
-        "group flex justify-center items-center gap-x-[10px] rounded-full border border-[#161616] text-[15px] text-[#161616] font-light hover:bg-[#161616] hover:text-white lg:hover:px-[90px] group transition-all duration-200 tracking-widest",
+        "group hover:bg-[#161616] hover:text-white lg:hover:px-[90px] flex justify-center items-center gap-x-[10px] rounded-full border border-[#161616] text-[15px] text-[#161616] font-light group transition-all duration-200",
       },
       size: {
         default: "px-[83px] py-[11px]",

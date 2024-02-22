@@ -15,6 +15,7 @@ import { Header } from './_components/header'
 import { Container } from './_components/container'
 import { Block } from './_components/block'
 import { FirstScreen } from './_components/first-screen'
+import { Seperator } from './_components/seperator'
 
 export default function Home() {
 
@@ -88,7 +89,7 @@ export default function Home() {
                 
                 <div className='flex mt-[15px] lg:mt-[23px] justify-between'>
                   <div className='flex items-center gap-x-[10px] z-30 lg:gap-x-[20px] justify-between'>
-                    <BrushIcon color='#161616'/>
+                    <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]' color='#161616'/>
                     <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]' color='#161616'/>
                     <p className='text-[16px] text-[#161616] lg:text-[32px] font-light'>
                       Бренд-дизайн
@@ -135,7 +136,7 @@ export default function Home() {
               </ScrollButton>
             </Block>
 
-            <div className='lg:hidden block w-full h-[5px] bg-white rounded-full'/>
+            <Seperator/>
 
             <Block className='grid grid-cols-2 grid-rows-1 lg:grid-cols-[66%_auto] lg:grid-rows-[210px_351px] gap-[10px] lg:gap-[20px] w-full mr-auto ml-auto'>
                 <div className='col-span-2 lg:col-span-1 lg:row-span-2 bg-white w-full h-full rounded-[20px]'>
@@ -172,7 +173,7 @@ export default function Home() {
                     <div className='flex items-center gap-x-[5px] lg:gap-y-[10px] lg:gap-x-[20px] z-30 justify-center lg:flex-wrap lg:justify-start w-full'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]'/>
-                      <p className='text-[14px] lg:text-[32px] font-light drop-shadow-[0_0px_7px_rgba(0,0,0,1)] truncate'>
+                      <p className='text-[14px] lg:text-[32px] font-light drop-shadow-[0_0px_7px_rgba(0,0,0,1)]'>
                        Инфографика
                       </p>
                     </div>
@@ -225,7 +226,7 @@ export default function Home() {
                 </div>
             </Block>
 
-            <div className='lg:hidden block w-full h-[5px] bg-white rounded-full'/>
+            <Seperator/>
 
             <Block className='w-full bg-white px-[15px] lg:px-[30px] h-[120px] lg:h-[250px] rounded-[15px] mr-auto ml-auto relative'>
               <div className='flex mt-[15px] lg:mt-[50px]'>

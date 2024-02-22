@@ -15,7 +15,7 @@ export const ImageSized: FC<ImageSizedProps> = ({name, className}) => {
 
   let end = '';
   let dir = ''
-  
+
   if (phone) {end = '-sm'; dir = 'sm'}
   else {end = ''; dir = 'lg'}
 
