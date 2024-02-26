@@ -25,7 +25,7 @@ export const FirstScreen: FC<FirstScreenProps> = ({}) => {
           </div>
           <h1 className='leading-[30px] md:leading-[60px] lg:leading-[100px] z-30
             max-w-[281px] md:max-w-[600px] lg:max-w-[1023px] font-semibold
-            justify-center items-center text-center text-[24px] md:text-[42px] lg:text-[80px]'
+            justify-center items-center text-center text-[24px] md:text-[42px] lg:text-[64px] xl:text-[80px]'
           >
             Качественный <span className='text-gradient relative animate-pulse'><i className='w-full h-[7%] bg-gradient absolute lg:-bottom-[4px] -bottom-[1px]'/>дизайн</span> по доступной цене
           </h1>

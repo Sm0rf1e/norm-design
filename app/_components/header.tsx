@@ -32,7 +32,7 @@ export const Header: FC<HeaderProps> = ({}) => {
         </ScrollButton>
 
         <LinkButton
-          href='https://t.me/nn_michail'
+          href='https://www.instagram.com/nn_michail/'
           className='hidden md:flex lg:flex px-[20px] py-[5px]
           lg:py-[11px] lg:px-[83px]'
         >

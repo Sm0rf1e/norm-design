@@ -16,14 +16,12 @@ import { Container } from './_components/container'
 import { Block } from './_components/block'
 import { FirstScreen } from './_components/first-screen'
 import { Seperator } from './_components/seperator'
+import { Metadata } from 'next'
 
 export default function Home() {
 
   return (
     <>
-      <Header/>
-      
-      <main className='font-sf_pro'>
         <FirstScreen/>
 
         <Container>
@@ -42,7 +40,7 @@ export default function Home() {
               </div>
 
               <div className='flex flex-col gap-[20px]'>
-                <h2 className='leading-7 lg:leading-tight text-[24px] lg:text-6xl font-normal z-30 max-w-[838px] mt-[12px] lg:mt-[93px]'>
+                <h2 className='leading-7 md:leading-10 lg:leading-tight text-[24px] md:text-[42px] lg:text-6xl font-normal z-30 max-w-[300px] md:max-w-[500px] lg:max-w-[838px] mt-[12px] lg:mt-[93px]'>
                   Надежный дизайнер с <span className='font-sf_pro_italic font-normal'>множеством кейсов</span> работ
                 </h2>
                 <h3 className='leading-4 z-30 text-[14px] lg:text-[24px] w-[183px] lg:w-[570px] font-normal'>
@@ -98,7 +96,7 @@ export default function Home() {
                 </div>
 
                 <div className='flex flex-col z-30 gap-[10px]'>
-                  <h2 className='leading-7 text-[24px] text-[#161616] lg:text-4xl z-30 max-w-[257px] lg:max-w-[400px] mt-[20px] lg:mt-[36px]'>
+                  <h2 className='leading-7 text-[#161616] text-[24px] lg:text-4xl z-30 max-w-[257px] lg:max-w-[400px] mt-[20px] lg:mt-[36px]'>
                     Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
                   </h2>
                 </div>
@@ -119,7 +117,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <ScrollButton to={2950} variant='secondary' className='hidden lg:flex z-30'>
+                  <ScrollButton to={2950} variant='secondary' className='hidden 2xl:px-[83px] lg:px-[30px] lg:flex right-[15px] top-[23px] z-30'>
                     Перейти
                   </ScrollButton>
 
@@ -155,7 +153,7 @@ export default function Home() {
                     <div className='flex items-center gap-x-[5px] lg:gap-y-[10px] lg:gap-x-[20px] justify-center z-30 lg:justify-start w-full lg:w-auto'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]'/>
-                      <p className='text-[14px] lg:text-[32px] font-light drop-shadow-[0_0px_7px_#01A4F5] truncate'>
+                      <p className='text-[14px] lg:text-[24px] xl:text-[32px] font-light drop-shadow-[0_0px_7px_#01A4F5] truncate'>
                        Логотипы
                       </p>
                     </div>
@@ -173,7 +171,7 @@ export default function Home() {
                     <div className='flex items-center gap-x-[5px] lg:gap-y-[10px] lg:gap-x-[20px] z-30 justify-center lg:flex-wrap lg:justify-start w-full'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]'/>
-                      <p className='text-[14px] lg:text-[32px] font-light drop-shadow-[0_0px_7px_rgba(0,0,0,1)]'>
+                      <p className='text-[14px] lg:text-[24px] xl:text-[32px] font-light drop-shadow-[0_0px_7px_rgba(0,0,0,1)]'>
                        Инфографика
                       </p>
                     </div>
@@ -193,7 +191,7 @@ export default function Home() {
                     <div className='flex items-center gap-x-[10px] lg:gap-x-[20px] w-full lg:w-auto z-30'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]'/>
-                      <p className='text-[14px] text-wrap lg:text-[32px] font-light truncate'>
+                      <p className='text-[14px] text-wrap lg:text-[24px] xl:text-[32px] font-light truncate'>
                        Сайты
                       </p>
                     </div>
@@ -212,7 +210,7 @@ export default function Home() {
                     <div className='flex items-center gap-x-[10px] lg:gap-x-[20px] w-full lg:w-auto'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]' color='#161616'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]' color='#161616'/>
-                      <p className='text-[14px] text-[#161616] text-wrap lg:text-[32px] font-light truncate z-30'>
+                      <p className='text-[14px] text-[#161616] text-wrap lg:text-[24px] xl:text-[32px] font-light truncate z-30'>
                        Мобильные приложения
                       </p>
                     </div>
@@ -233,14 +231,14 @@ export default function Home() {
                 <div className='flex items-center gap-x-[10px] lg:gap-x-[20px] w-full lg:w-auto'>
                   <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px] z-30' color='#161616'/>
                   <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px] z-30' color='#161616'/>
-                  <p className='text-[14px] text-[#161616] text-wrap lg:text-[32px] font-light truncate z-30'>
+                  <p className='text-[14px] text-[#161616] text-wrap lg:text-[24px] xl:text-[32px] font-light truncate z-30'>
                     Контакты & Работы
                   </p>
                 </div>
               </div>
 
               <div className='flex flex-col gap-[10px]'>
-                <h2 className='leading-4 text-[16px] text-[#161616] lg:text-4xl z-30 max-w-[187px] lg:max-w-[400px] mt-[12px] lg:mt-[16px] font-normal'>
+                <h2 className='text-[16px] lg:text-[28px] xl:text-4xl text-[#161616] z-30 max-w-[187px] lg:max-w-[458px] mt-[12px] lg:mt-[16px] font-normal'>
                   Ниже мои социальные сети и контакты
                 </h2>
               </div>
@@ -256,13 +254,13 @@ export default function Home() {
                     <div className='flex items-center gap-x-[10px] lg:gap-x-[20px] w-full lg:w-auto'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]'/>
-                      <p className='text-[14px] text-wrap lg:text-[32px] font-light truncate z-30'>
+                      <p className='text-[14px] text-wrap lg:text-[24px] xl:text-[32px] font-light truncate z-30'>
                         instagram.com
                       </p>
                     </div>
                   </div>
                   <div className='flex flex-col gap-[10px]'>
-                    <h2 className='text-[14px] lg:text-4xl z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
+                    <h2 className='text-[16px] lg:text-[28px] xl:text-4xl z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
                       Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
                     </h2>
                 </div>
@@ -284,13 +282,13 @@ export default function Home() {
                     <div className='flex items-center gap-x-[10px] lg:gap-x-[20px] w-full lg:w-auto'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]'/>
-                      <p className='text-[14px] text-wrap lg:text-[32px] font-light truncate z-30'>
+                      <p className='text-[14px] text-wrap lg:text-[24px] xl:text-[32px] font-light truncate z-30'>
                         behance.net
                       </p>
                     </div>
                   </div>
                   <div className='flex flex-col gap-[10px]'>
-                    <h2 className='text-[14px] lg:text-4xl z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
+                    <h2 className='text-[16px] lg:text-[28px] xl:text-4xl z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
                       Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
                     </h2>
                 </div>
@@ -312,13 +310,13 @@ export default function Home() {
                     <div className='flex items-center gap-x-[10px] lg:gap-x-[20px] w-full lg:w-auto'>
                       <BrushIcon className='w-[20px] h-[20px] lg:w-[34px] lg:h-[34px]' color='#161616'/>
                       <DoubleSlash className='w-[17px] h-[20px] lg:w-[24px] lg:h-[28px]' color='#161616'/>
-                      <p className='text-[14px] text-[#161616] text-wrap lg:text-[32px] font-light truncate z-30'>
+                      <p className='text-[14px] text-[#161616] text-wrap lg:text-[24px] xl:text-[32px] font-light truncate z-30'>
                         telegram.org
                       </p>
                     </div>
                   </div>
                   <div className='flex flex-col gap-[10px]'>
-                    <h2 className='text-[14px] lg:text-4xl text-[#161616] z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
+                    <h2 className='text-[16px] lg:text-[28px] xl:text-4xl text-[#161616] z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
                       Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
                     </h2>
                 </div>
@@ -331,8 +329,8 @@ export default function Home() {
                     Перейти
                 </LinkButton>
                 <div className='absolute bottom-0 right-0 w-full h-full z-0'>
-                    <ImageSized name='block-13' className='rounded-[15px]'/>
-                  </div>
+                  <ImageSized name='block-13' className='rounded-[15px]'/>
+                </div>
               </Block>
 
               <Block className='bg-white rounded-[15px] px-[15px] lg:px-[30px] h-[280px] lg:h-[427px] relative'>
@@ -387,8 +385,6 @@ export default function Home() {
             </Block>
 
           </Container>
-
-      </main>
     </>
   );
 }
