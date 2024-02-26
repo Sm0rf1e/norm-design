@@ -3,10 +3,7 @@ import { Header } from './_components/header'
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {
-    absolute: 'NORM',
-    template: '%s | Главная'
-  },
+  title: 'NORM | Главная',
   description: 'Михаил - надежный веб-дизайнер с множеством кейсов работ. Оформление ваших услуг в формате WEB, бренд-дизайн, логотипы, инфографика и многое другое.',
   keywords: ['веб-дизайн', 'бренд-дизайн', 'логотипы', 'инфографика', 'Михаил', 'дизайнер'],
   robots: {
@@ -27,9 +24,6 @@ export const metadata: Metadata = {
     url: 'https://normweb.space',
     type: 'website',
     siteName: 'NORM',
-    images: [{
-      url: 'https://normweb.space/logo.jpg'
-    }]
   }
 }
 
@@ -42,6 +36,7 @@ export default function RootLayout({
     <>
       <head>
         <meta name="language" content="ru"/>
+        <meta property='og:image' content='https://normweb.space/logo.jpg'/>
       </head>
       <html lang="ru">
         <body>
