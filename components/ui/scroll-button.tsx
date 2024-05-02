@@ -16,8 +16,6 @@ interface ScrollButtonProps {
 export const ScrollButton: FC<PropsWithChildren<ScrollButtonProps>> = ({
   children, className, variant = 'default', iconSize = 'lg', to
 }) => {
-  const {push} = useRouter()
-
   const scrollTo = (e: any) => {
     e.preventDefault();
 		

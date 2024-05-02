@@ -3,20 +3,18 @@ import { BrushIcon } from '@/components/icons/brush-icon'
 import { DoubleSlash } from '@/components/icons/double-slash'
 import { InstagramIcon } from '@/components/icons/instagram-icon'
 import { MailIcon } from '@/components/icons/mail-icon'
+import { PhoneIcon } from '@/components/icons/phone-icon'
 import { ShineIcon } from '@/components/icons/shine-icon'
 import { TelegramIcon } from '@/components/icons/telegram-icon'
 import { ImageSized } from '@/components/ui/image-sized'
 import { LinkButton } from '@/components/ui/link-button'
-import { PhoneIcon } from '@/components/icons/phone-icon'
 import { ScrollButton } from '@/components/ui/scroll-button'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Header } from './_components/header'
-import { Container } from './_components/container'
 import { Block } from './_components/block'
+import { Container } from './_components/container'
 import { FirstScreen } from './_components/first-screen'
 import { Seperator } from './_components/seperator'
-import { Metadata } from 'next'
 
 export default function Home() {
 
@@ -41,7 +39,7 @@ export default function Home() {
 
               <div className='flex flex-col gap-[20px]'>
                 <h2 className='leading-7 md:leading-10 lg:leading-tight text-[24px] md:text-[42px] lg:text-6xl font-normal z-30 max-w-[300px] md:max-w-[500px] lg:max-w-[838px] mt-[12px] lg:mt-[93px]'>
-                  Надежный дизайнер с <span className='font-sf_pro_italic font-normal'>множеством кейсов</span> работ
+                  Надежный дизайнер с <span className='font-interItalic font-normal'>множеством кейсов</span> работ
                 </h2>
                 <h3 className='leading-4 z-30 text-[14px] lg:text-[24px] w-[183px] lg:w-[570px] font-normal'>
                   &#47;&#47; Меня зовут Михаил, буду рад поработать с вами
@@ -74,7 +72,7 @@ export default function Home() {
 
                 <div className='flex flex-col gap-[10px]'>
                   <h2 className='leading-7 text-[24px] lg:text-4xl z-30 max-w-[257px] font-normal lg:max-w-[400px] mt-[20px] lg:mt-[36px]'>
-                    Оформление ваших услуг в формате <span className='font-sf_pro_italic font-normal'>WEB</span>
+                    Оформление ваших услуг в формате <span className='font-interItalic font-normal'>WEB</span>
                   </h2>
                 </div>
                 <div className='absolute bottom-0 left-0 z-0 w-full h-full'>
@@ -97,7 +95,7 @@ export default function Home() {
 
                 <div className='flex flex-col z-30 gap-[10px]'>
                   <h2 className='leading-7 text-[#161616] text-[24px] lg:text-4xl z-30 max-w-[257px] lg:max-w-[400px] mt-[20px] lg:mt-[36px]'>
-                    Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
+                    Оформление вашего <span className='font-interItalic font-normal'>бренда // продукта</span>
                   </h2>
                 </div>
                 <div className='absolute bottom-0 left-0 z-0 w-full h-full'>
@@ -261,7 +259,7 @@ export default function Home() {
                   </div>
                   <div className='flex flex-col gap-[10px]'>
                     <h2 className='text-[16px] lg:text-[28px] xl:text-4xl z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
-                      Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
+                      Оформление вашего <span className='font-interItalic font-normal'>бренда // продукта</span>
                     </h2>
                 </div>
                 </div>
@@ -289,7 +287,7 @@ export default function Home() {
                   </div>
                   <div className='flex flex-col gap-[10px]'>
                     <h2 className='text-[16px] lg:text-[28px] xl:text-4xl z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
-                      Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
+                      Оформление вашего <span className='font-interItalic font-normal'>бренда // продукта</span>
                     </h2>
                 </div>
                 </div>
@@ -317,7 +315,7 @@ export default function Home() {
                   </div>
                   <div className='flex flex-col gap-[10px]'>
                     <h2 className='text-[16px] lg:text-[28px] xl:text-4xl text-[#161616] z-30 max-w-[258px] lg:max-w-[737px] mt-[7px] lg:mt-[10px] font-normal'>
-                      Оформление вашего <span className='font-sf_pro_italic font-normal'>бренда // продукта</span>
+                      Оформление вашего <span className='font-interItalic font-normal'>бренда // продукта</span>
                     </h2>
                 </div>
                 </div>

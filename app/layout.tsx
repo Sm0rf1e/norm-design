@@ -1,6 +1,9 @@
 import { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import { Header } from './_components/header'
-import "./globals.css";
+import "./globals.css"
+
+const inter = Inter({ subsets: ['latin'], preload: true })
 
 export const metadata: Metadata = {
   title: 'NORM | Главная',
@@ -9,6 +12,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NORM | Главная',
+    description: 'Михаил - надежный веб-дизайнер с множеством кейсов работ. Оформление ваших услуг в формате WEB, бренд-дизайн, логотипы, инфографика и многое другое.',
+    images: ['https://normweb.space/logo.jpg']
   },
   formatDetection: {telephone: false},
   applicationName: 'Norm-landing',
@@ -24,6 +33,7 @@ export const metadata: Metadata = {
     url: 'https://normweb.space',
     type: 'website',
     siteName: 'NORM',
+    images: ['https://normweb.space/logo.jpg']
   }
 }
 
@@ -34,14 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <head>
-        <meta name="language" content="ru"/>
-        <meta property='og:image' content='https://normweb.space/logo.jpg'/>
-      </head>
       <html lang="ru">
-        <body>
+        <body className={inter.className}>
           <Header/>
-          <main className='font-sf_pro'>
+          <main>
           {children}
           </main>
         </body>
